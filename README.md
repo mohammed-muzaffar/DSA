@@ -1,4 +1,5 @@
 # DSA
 
-**Arrays**
-- Two Sum 
+**Arrays**c
+- Two Sum
+- Build Array from Permutation 
