@@ -1,15 +1,22 @@
 import java.util.Stack;
 
-class StackB {
-    public static void pushAtBottom(Stack<Integer> s, int data) {
+public class PushAtBottom {
 
+    public static void bottom(Stack<Integer> s, int data) {
         if (s.isEmpty()) {
             s.push(data);
             return;
         }
+
         int top = s.pop();
-        pushAtBottom(s, data);
+        bottom(s, data);
         s.push(top);
+    }
+
+    public static void printStack(Stack<Integer> s) {
+        while (!s.isEmpty()) {
+            System.out.println(s.pop());
+        }
     }
 
     public static void main(String[] args) {
@@ -18,6 +25,9 @@ class StackB {
         s.push(2);
         s.push(3);
 
-        StackB.pushAtBottom(s, 4);
+        bottom(s, 4);
+        printStack(s);
+
     }
+
 }
