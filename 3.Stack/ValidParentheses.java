@@ -1,9 +1,5 @@
 import java.util.Stack;
 
-import javax.swing.text.html.HTMLDocument.RunElement;
-
-import java.util.Stack;
-
 public class ValidParentheses {
 
     public static boolean valid(String str) {
