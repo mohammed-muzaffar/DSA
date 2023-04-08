@@ -17,4 +17,7 @@
 - PushAtBottom
 - ReverseString
 - Stock Span Problem
+- Duplicate Parentheses
+- Valid Parentheses
+- Next Greater Element
 
