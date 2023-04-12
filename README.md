@@ -25,3 +25,6 @@
 - Circular Queue Using Array
 - Queue Implementation Using Array
 - Queue Implementation Using LinkedList
+- Stack Using 2 Queues
+- Queue Using 2 Stacks
+- Non-Repeating Letter in a Stream of Characters
