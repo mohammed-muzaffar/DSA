@@ -28,3 +28,6 @@
 - Stack Using 2 Queues
 - Queue Using 2 Stacks
 - Non-Repeating Letter in a Stream of Characters
+- InterLeave 2 Halves of a Queue
+- Queue Reversal
+- Reverse First K Element of Queue
