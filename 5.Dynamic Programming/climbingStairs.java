@@ -7,14 +7,18 @@ public class climbingStairs {
             return 1;
 
         int[] dp = new int[n];
-        dp[0] = 1;
-        dp[1] = 2;
 
-        for (int i = 2; i < n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+        int curr = 0, prev, prev2;
+        prev = 1;
+        prev2 = 1;
+
+        for (int i = 2; i <= n; i++) {
+            curr = prev + prev2;
+            prev2 = prev;
+            prev = curr;
         }
 
-        return dp[n - 1];
+        return curr;
     }
 
     public static void main(String args[]) {
