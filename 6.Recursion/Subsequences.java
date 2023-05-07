@@ -14,8 +14,11 @@ class Subsequences {
             return;
         }
 
+        // take the element
         solve(arr, ind + 1, list);
         list.add(arr[ind]);
+
+        // not take the element
         solve(arr, ind + 1, list);
         list.remove(list.size() - 1);
     }
