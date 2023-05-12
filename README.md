@@ -8,7 +8,7 @@
 
 
 **String**
-- FindSubsets.java
+- FindSubsets.java 
 
 
 **Stack**
@@ -45,3 +45,14 @@
 - longest Common Subsequences
 - Minimum Coins
 - Rod Cutting
+- House Robber 1
+- Ninja Trainings
+- Jump Game 2
+- Edit Disatnce Problem
+- length of longest Increasing subsequence
+- Minimum Operation for converting string one to string two
+
+**Recursion**
+- SubSequences
+- SubSequences Where k Sum
+- Palindrome Partitioning Problem
