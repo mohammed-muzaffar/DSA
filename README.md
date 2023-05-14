@@ -51,6 +51,11 @@
 - Edit Disatnce Problem
 - length of longest Increasing subsequence
 - Minimum Operation for converting string one to string two
+- Frog Jump with K Distance
+- Max Sum of Non Adjacent Elements
+- Unique Paths
+- Unique Paths 2
+- Minimum Path Sum
 
 **Recursion**
 - SubSequences
