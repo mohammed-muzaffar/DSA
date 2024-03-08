@@ -23,4 +23,5 @@ public class LIS {
         int[] nums = { 0, 1, 0, 3, 2, 3 };
         System.out.println(lengthofLIS(nums));
     }
+
 }

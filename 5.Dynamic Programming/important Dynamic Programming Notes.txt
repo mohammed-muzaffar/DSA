@@ -1,0 +1,70 @@
+Recursion Steps: 
+================
+
+In recursion problem just they ask two things 1.Sum(all possible ways) 2. return min/max of something.
+
+1. Present the problem in terms of index
+2. Do all possible stuffs on that indexes
+3. return the solution based on sum or maximum/minimum.
+
+	1. Sum: In Question this statement will present (return all possible ways)
+		* In question it ask about all possible ways, then you have return the integer, The base                		cases are two, 1. if(i == 0 && j == 0) return 1; // condition true
+					  2. if(i < 0  || j < 0) return 0; // (out of bond matrix).		
+
+	2. Maximum/Minimum: In Question this statement will present(max/min of something)
+		
+		* These are the two base cse
+           if(i==0 && j == 0)
+ 		    return matrix[0][0];
+  		  if(i<0 || j<0)
+  	        return 1e9; // if min return 1e9 else if max return -1e9
+
+Time complexity = o(2^n) if two branches, o(3^n) if three branches, o(2^m*n)
+
+
+
+
+
+Recursion to Memoization(dp):
+============================
+
+memoization = recursion + dp array
+
+steps:
+=====
+1.Create a dp array of size [i][j].
+2.Fill the dp array with -1 initially.
+3.Check the index answer is already present in dp array or not. if(dp[i][j] != -1) return dp[i][j]
+4.Copy the recurrence lines and store that recurrence answer in dp[i][j].
+5.return the dp[i][j]. if u created dp[i+1][j+1] array then return dp[i][j].
+
+ex: 
+static int minSumPathUtil(int i, int j, int[][] matrix, int[][] dp) {}
+
+static int minSumPath(int n, int m, int[][] matrix){
+    int dp[][]=new int[n][m];
+    for(int row[]: dp)
+    Arrays.fill(row,-1);
+    return minSumPathUtil(n-1,m-1,matrix,dp);   
+}
+
+Giving the n-1 and m-1 to memoization method. because the n and m are length of matrix and we need the answer at n-1 and m-1, so passing n-1 and m-1, and answer will get based on required index.
+
+Time Complexity: O(M*N)
+Space Complexity : O((N-1)+(M-1)) + O(M*N) 
+Reason: We are using a recursion stack space:O((N-1)+(M-1)), here (N-1)+(M-1) is the path length and an external DP Array of size ‘M*N’.
+
+
+
+
+
+Memoization to Tabulation:
+==========================
+
+1. Declared the base case
+2. Express all states in nested for loop
+3. copy the recurrence inside the loop.
+
+Time complexity = O(m*n)
+
+Space Complexity = O(m*n) for dp array.

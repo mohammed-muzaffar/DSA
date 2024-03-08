@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "5.Dynamic Programming",
+        "4.Queue",
+        "3.Stack",
+        "2.Strings",
+        "1.Arrays",
+        "6.Recursion"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

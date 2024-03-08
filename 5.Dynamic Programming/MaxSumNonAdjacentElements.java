@@ -24,5 +24,8 @@ public class MaxSumNonAdjacentElements {
         int[] dp = new int[n];
         Arrays.fill(dp, -1);
         System.out.print(solve(n - 1, arr, dp));
+        for (int i = 0; i < dp.length; i++) {
+            System.out.print(dp[i] + " ");
+        }
     }
 }

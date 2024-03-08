@@ -14,8 +14,8 @@ class rodCutting {
     }
 
     public static void main(String args[]) {
-        int[] price = { 1, 5, 8, 9, 10, 17, 17, 20 };
-        int n = 8;
+        int[] price = { 3, 6, 10, 15, 13 };
+        int n = 5;
         int[] dp = new int[n + 1];
         Arrays.fill(dp, -1);
 

@@ -26,6 +26,5 @@ class frogJump {
         int[] heights = { 10, 20, 30, 10 };
         int n = heights.length;
         System.out.println(solve(n - 1, heights));
-
     }
 }
